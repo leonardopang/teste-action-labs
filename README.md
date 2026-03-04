@@ -1,4 +1,4 @@
-# WordPress Theme – Cliente Portal
+# WordPress Theme – Teste Action Labs
 
 **Teste Técnico – Action Labs**
 
