@@ -137,14 +137,16 @@
   justify-content: flex-start;
 }
 
-.wp-block-navigation__responsive-container .wp-block-navigation__container {
-  padding: 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+@media (max-width: 1023px) {
+  .wp-block-navigation__responsive-container .wp-block-navigation__container {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-  .wp-block-navigation-item__label {
-    font-size: 16px;
+    .wp-block-navigation-item__label {
+      font-size: 16px;
+    }
   }
 }
 
