@@ -1,0 +1,137 @@
+.cp-archive-blog {
+  padding: 80px;
+}
+.cp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.wp-block-post-title {
+  margin: 0;
+}
+
+.wp-block-post-title a {
+  color: var(--Brand-Dark-blue, #01758d);
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  margin: 0;
+}
+
+.cp-card {
+  border-radius: 4px;
+  background: var(--Neutral-White, #fff);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cp-card .wp-block-post-featured-image {
+  margin: 0;
+  overflow: hidden;
+}
+
+.cp-card .wp-block-post-featured-image img {
+  transition: transform 0.3s ease;
+}
+
+.cp-card:hover .wp-block-post-featured-image img {
+  transform: scale(1.1);
+}
+
+.cp-card .cp-pill {
+  max-width: max-content;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+}
+
+.cp-card .cp-pill a {
+  color: var(--Neutral-Dark03, #666);
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  border-radius: 100px;
+  background: var(--Neutral-White, #fff);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  padding: 4px 12px;
+  text-decoration: none;
+}
+
+.cp-card .cp-pill a:hover {
+  background: var(--Neutral-Dark03, #666);
+  color: var(--Neutral-White, #fff);
+}
+
+.cp-card__content {
+  padding: 30px 30px 16px;
+  background-color: white;
+}
+
+.wp-block-post-excerpt__excerpt {
+  overflow: hidden;
+  color: var(--Neutral-Dark03, #666);
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  margin-top: 8px;
+}
+
+.cp-readmore {
+  color: var(--Brand-Dark-blue, #01758d);
+  font-family: Roboto;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 127.273% */
+  margin-top: 30px;
+}
+
+.cp-readmore:hover,
+.cp-card:hover .cp-readmore {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .cp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cp-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cp-archive-blog {
+    padding: 0 0 80px;
+  }
+}

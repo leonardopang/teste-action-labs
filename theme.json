@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "1100px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "brand", "color": "#11B6E7", "name": "Brand" },
+        { "slug": "text", "color": "#1B1B1B", "name": "Text" },
+        { "slug": "muted", "color": "#6B7280", "name": "Muted" },
+        { "slug": "surface", "color": "#FFFFFF", "name": "Surface" },
+        { "slug": "bg", "color": "#F5F7FA", "name": "Background" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+          "slug": "inter",
+          "name": "Inter"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--bg)",
+      "text": "var(--wp--preset--color--text)"
+    }
+  }
+}

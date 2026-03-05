@@ -1,0 +1,87 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+
+<!-- HERO -->
+<!-- wp:cover {"useFeaturedImage":true,"dimRatio":60,"contentPosition":"center center","className":"cp-hero"} -->
+<div class="wp-block-cover cp-hero">
+  <span
+    aria-hidden="true"
+    class="wp-block-cover__background has-background-dim-60 has-background-dim"
+  ></span>
+  <div class="wp-block-cover__inner-container"></div>
+</div>
+<!-- /wp:cover -->
+
+<!-- CONTEÚDO -->
+<!-- wp:group {"className":"cp-single-wrap"} -->
+<div class="wp-block-group cp-single-wrap">
+  <!-- container próprio (controle total) -->
+  <div class="cp-container cp-single-container">
+    <!-- CARD -->
+    <div class="cp-single-card">
+      <!-- Imagem dentro do card -->
+      <!-- wp:post-featured-image {"className":"cp-single-card__media","isLink":false} /-->
+
+      <!-- Corpo do card -->
+      <div class="cp-single-card__body">
+        <!-- PILL -->
+        <!-- wp:post-terms {"term":"category","className":"cp-pill"} /-->
+
+        <!-- META (com ícones) -->
+        <div class="cp-single-meta">
+          <span class="cp-single-meta__item">
+            <span class="cp-single-meta__icon" aria-hidden="true">
+              <svg
+                width="13"
+                height="14"
+                viewBox="0 0 13 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.328125 5.25C0.136719 5.25 0 5.41406 0 5.57812V12.6875C0 13.4258 0.574219 14 1.3125 14H10.9375C11.6484 14 12.25 13.4258 12.25 12.6875V5.57812C12.25 5.41406 12.0859 5.25 11.9219 5.25H0.328125ZM12.25 4.04688V3.0625C12.25 2.35156 11.6484 1.75 10.9375 1.75H9.625V0.328125C9.625 0.164062 9.46094 0 9.29688 0H8.20312C8.01172 0 7.875 0.164062 7.875 0.328125V1.75H4.375V0.328125C4.375 0.164062 4.21094 0 4.04688 0H2.95312C2.76172 0 2.625 0.164062 2.625 0.328125V1.75H1.3125C0.574219 1.75 0 2.35156 0 3.0625V4.04688C0 4.23828 0.136719 4.375 0.328125 4.375H11.9219C12.0859 4.375 12.25 4.23828 12.25 4.04688Z"
+                  fill="#AEB0B3"
+                />
+              </svg>
+            </span>
+
+            <!-- wp:post-date {"format":"j M, Y"} /-->
+          </span>
+
+          <span class="cp-single-meta__item">
+            <span class="cp-single-meta__icon" aria-hidden="true">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 6.91797C0 7.27344 0.136719 7.60156 0.382812 7.84766L6.15234 13.6172C6.67188 14.1367 7.51953 14.1367 8.01172 13.6172L13.5898 8.03906C14.1094 7.54688 14.1094 6.69922 13.5898 6.17969L7.82031 0.410156C7.57422 0.164062 7.24609 0 6.89062 0H1.3125C0.574219 0 0 0.601562 0 1.3125V6.91797ZM3.0625 1.75C3.77344 1.75 4.375 2.35156 4.375 3.0625C4.375 3.80078 3.77344 4.375 3.0625 4.375C2.32422 4.375 1.75 3.80078 1.75 3.0625C1.75 2.35156 2.32422 1.75 3.0625 1.75Z"
+                  fill="#AEB0B3"
+                />
+              </svg>
+            </span>
+
+            <!-- wp:post-terms {"term":"post_tag","separator":", "} /-->
+          </span>
+        </div>
+
+        <!-- Título -->
+        <!-- wp:post-title {"level":1,"className":"cp-single-title"} /-->
+
+        <!-- Autor -->
+        <span class="cp-single-author-wrap">
+          Autor:
+          <!-- wp:post-author-name {"prefix":"Autor: ","className":"cp-single-author"} /-->
+        </span>
+
+        <!-- Conteúdo -->
+        <!-- wp:post-content {"className":"cp-single-content"} /-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

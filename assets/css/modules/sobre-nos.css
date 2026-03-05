@@ -1,0 +1,44 @@
+.page-template-page-sobre {
+  h1 {
+    color: var(--Brand-Dark-blue, #01758d);
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 109%; /* 69.76px */
+  }
+
+  h2 {
+    color: #525252;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%; /* 52px */
+    max-width: 700px;
+  }
+
+  .entry-content {
+    max-width: 872px;
+    p,
+    li {
+      color: #525252;
+      font-feature-settings:
+        "liga" off,
+        "clig" off;
+
+      /* Paragraph/Large */
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+    }
+  }
+}
